@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using SystemIdentityModule;
 using IdentitySample.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
