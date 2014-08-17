@@ -16,7 +16,8 @@ namespace ConfigurationModule
         public static SystemEmailAccount SystemEmailAccount { 
             get
             {
-                return Application.Configuration.SystemEmailAccounts.FindAll(x => x.Intention == SystemEmailAccountIntention.UserAccountAndRegistration).FirstOrDefault();
+              var emailAcount=   Application.Configuration.SystemEmailAccounts.FindAll(x => x.Intention == SystemEmailAccountIntention.UserAccountAndRegistration);
+              return emailAcount.FirstOrDefault();
             }
         }
 
@@ -26,9 +27,7 @@ namespace ConfigurationModule
         public static string BaseDir = AppDomain.CurrentDomain.BaseDirectory;
 
         public static string PathToSetupFile = BaseDir + SetUpFile;
-        public static string PathToDebugConfigFile = BaseDir  + DebugConfigFile;
-        public static string PathToReleaseConfigFile = BaseDir + ReleaseConfigFile;
-
+       
         public static List<SetUpFile> InitialSetUpFileObject =
             new List<SetUpFile>
             {

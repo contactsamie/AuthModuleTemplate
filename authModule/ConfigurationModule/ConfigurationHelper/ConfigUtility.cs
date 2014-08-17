@@ -20,20 +20,25 @@ namespace ConfigurationModule.ConfigurationHelper
             return JsonConvert.DeserializeObject<T>(data);
         }
 
-        private static void Persist<T>(T obj, string file)
+        private static string Persist<T>(T obj, string file)
         {
-            string json = Serialize(obj);
+            var json = Serialize(obj);
             File.WriteAllText(file, json);
+            return File.ReadAllText(file);
         }
 
         private static T InitializeConfig<T>(string file, T init) where T : new()
         {
-            if (!File.Exists(file) || string.IsNullOrEmpty(File.ReadAllText(file)))
+            var content = File.ReadAllText(file);
+            var hasContent = !string.IsNullOrEmpty(content);
+            var existsAndHasContent = (File.Exists(file) && hasContent);
+            if (!existsAndHasContent)
             {
-                Persist(init, file);
+                content = Persist(init, file);
             }
 
-            var setUpFileList = DeSerialize<T>(File.ReadAllText(file));
+            Condition.Requires(content).IsNotNullOrEmpty("Error loading config file content");
+            var setUpFileList = DeSerialize<T>(content);
 
             return setUpFileList;
         }
