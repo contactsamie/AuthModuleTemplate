@@ -45,7 +45,8 @@ namespace SystemServicesModule
                 new System.Net.Mail.MailMessage(sentFrom, message.Destination)
                 {
                     Subject = message.Subject,
-                    Body = message.Body
+                    Body = message.Body,
+                    IsBodyHtml = true
                 };
 
             // Send:

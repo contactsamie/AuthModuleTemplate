@@ -28,9 +28,8 @@ namespace ConfigurationModule
 
         public static string PathToSetupFile = BaseDir + SetUpFile;
        
-        public static List<SetUpFile> InitialSetUpFileObject =
-            new List<SetUpFile>
-            {
+        public static List<SetUpFile> InitialSetUpFileObject =new List<SetUpFile>
+        {
                 new SetUpFile
                 {
                     BaseDir=BaseDir,
