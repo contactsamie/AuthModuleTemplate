@@ -5,14 +5,20 @@ namespace authModule.Controllers
    // [Authorize(Roles = "Admin")]
     public class UIController : Controller
     {
-        public ActionResult Index(string a, string b, string c, string d, string e,string f)
+        public ActionResult Index(string a, string b, string c, string d, string e, string f, string g, string h, string i, string j, string k, string l)
         {
             var route = (a ?? "index.html") +
                        (string.IsNullOrEmpty(b) ? "" : "/" + b) +
                         (string.IsNullOrEmpty(c) ? "" : "/" + c)+
                         (string.IsNullOrEmpty(d) ? "" : "/" + d)+
                         (string.IsNullOrEmpty(e) ? "" : "/" + e)+
-                        (string.IsNullOrEmpty(f) ? "" : "/" + f);
+                        (string.IsNullOrEmpty(f) ? "" : "/" + f) +
+                       (string.IsNullOrEmpty(g) ? "" : "/" + g) +
+                        (string.IsNullOrEmpty(h) ? "" : "/" + h) +
+                        (string.IsNullOrEmpty(i) ? "" : "/" + i) +
+                        (string.IsNullOrEmpty(j) ? "" : "/" +j) +
+                        (string.IsNullOrEmpty(k) ? "" : "/" + k) +
+                        (string.IsNullOrEmpty(l) ? "" : "/" + l);
         
 
             var parts = route.Split('.');

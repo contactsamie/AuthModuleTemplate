@@ -24,9 +24,15 @@ namespace IdentitySample
                                 a = UrlParameter.Optional,
                                 b = UrlParameter.Optional,
                                 c = UrlParameter.Optional,
-                               d = UrlParameter.Optional,
-                               e = UrlParameter.Optional,
-                               f = UrlParameter.Optional
+                                d = UrlParameter.Optional,
+                                e = UrlParameter.Optional,
+                                f = UrlParameter.Optional,
+                                g = UrlParameter.Optional,
+                                h = UrlParameter.Optional,
+                                i = UrlParameter.Optional,
+                                j = UrlParameter.Optional,
+                                k = UrlParameter.Optional,
+                                l = UrlParameter.Optional
                 }
             );
            
