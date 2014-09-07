@@ -1,0 +1,63 @@
+{
+  "PSV": {
+    "P": null,
+    "S": null,
+    "V": null
+  },
+  "AdminAccount": {
+    "UserName": null,
+    "Password": null,
+    "EMail": null
+  },
+  "SystemEmailAccounts": [
+    {
+      "UserName": null,
+      "From": null,
+      "Password": null,
+      "Smtp": null,
+      "Intention": "Common"
+    },
+    {
+      "UserName": null,
+      "From": null,
+      "Password": null,
+      "Smtp": null,
+      "Intention": "UserAccountAndRegistration"
+    },
+    {
+      "UserName": null,
+      "From": null,
+      "Password": null,
+      "Smtp": null,
+      "Intention": "TechnicalSupport"
+    },
+    {
+      "UserName": null,
+      "From": null,
+      "Password": null,
+      "Smtp": null,
+      "Intention": "Information"
+    },
+    {
+      "UserName": null,
+      "From": null,
+      "Password": null,
+      "Smtp": null,
+      "Intention": "Security"
+    },
+    {
+      "UserName": null,
+      "From": null,
+      "Password": null,
+      "Smtp": null,
+      "Intention": "SystemNotification"
+    },
+    {
+      "UserName": null,
+      "From": null,
+      "Password": null,
+      "Smtp": null,
+      "Intention": "AdminNotification"
+    }
+  ]
+}

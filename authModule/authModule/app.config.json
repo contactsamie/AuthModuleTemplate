@@ -1,0 +1,12 @@
+[
+  {
+    "BaseDir": "C:\\Users\\",
+    "FileName": "debug.config.json",
+    "IsActive": true
+  },
+  {
+    "BaseDir": "C:\\Users\\",
+    "FileName": "release.config.json",
+    "IsActive": false
+  }
+]
