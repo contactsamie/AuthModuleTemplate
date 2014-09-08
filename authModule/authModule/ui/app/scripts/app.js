@@ -34,5 +34,26 @@ angular
         redirectTo: '/'
       });
   }).run(function(editableOptions) {
-    editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+      editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+
+      (function ($) {
+          $.fn.autosubmit = function () {
+              this.submit(function (event) {
+                  var form = $(this);
+                  $.ajax({
+                      type: form.attr('method'),
+                      url: form.attr('action'),
+                      data: form.serialize()
+                  }).done(function (r, e, s) {
+                      console.log(r);
+                      console.log("success");
+                  }).fail(function (r, e, s) {
+                      console.log(r);
+                      console.log("fail");
+                  });
+                  event.preventDefault();
+              });
+          };
+      })(jQuery);
+
   });

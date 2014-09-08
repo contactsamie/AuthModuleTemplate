@@ -26,8 +26,13 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
+  
+    <ng-include src="'views/common/header.html'"></ng-include>
 
     <ng-view src="'views/main.html'"></ng-view>
+    
+    <ng-include src="'views/common/footer.html'"></ng-include>
+   
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
         (function (i, s, o, g, r, a, m) {

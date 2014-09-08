@@ -1,0 +1,326 @@
+@media (max-width: 991px) {
+	/* Navigation */
+	header div.nav-main-collapse,
+	header div.nav-main-collapse.in {
+		width: 100%;
+		overflow: hidden;
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+
+    header div.nav-main-collapse.in h3.title,header div.nav-main-collapse.in h3.sub-title,header div.nav-main-collapse.in h3.extra-title{color: #ccc}
+
+	header nav.nav-main ul.nav-main {
+		float: none;
+		position: static;
+		margin: 8px 0;
+	}
+    .rox-menu-wrapper h3.title{font-size:14px;margin: 0 }
+    .rox-menu-wrapper h3.sub-title{font-size: 12px;margin: 0}
+    .sub-content h3{font-size: 14px;margin: 0;}
+    .sub-content h3 span,h3.extra-title{font-size: 12px}
+    .submenu-icon {
+        float: left;
+        display: block;
+        overflow: hidden;
+        margin-right: 15px;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 90px;
+        color: #444;
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+	header div.nav-main-collapse.collapse {
+		display: none !important;
+	}
+
+	header div.nav-main-collapse {
+		top: 4px;
+		position: relative;
+	}
+
+	header div.nav-main-collapse.in {
+		display: block !important;
+	}
+
+	header div.nav-collapse div.container nav.nav-main {
+		float: left;
+		width: 100%;
+	}
+
+	header div.nav-main-collapse {
+		background: #171717;
+		max-height: none;
+
+	}
+	
+	header .mega-menu-sub-title{color:#fff}
+
+	header > div.container{
+		margin-bottom: 0;
+	}
+
+	header nav ul.nav-main {
+		margin-right: -10px;
+	}
+
+	header div.nav-collapse {
+		background: #171717;
+		width: 100%;
+		clear: both;
+		width: 100%;
+	}
+
+	header nav.nav-main {
+		padding: 10px 0;
+		clear: both;
+		display: block;
+		float: none;
+		width: 100%;
+	}
+
+	header nav.nav-main ul,
+	header nav.nav-main ul li{
+		padding: 0;
+		margin: 0;
+	}
+
+	header nav.nav-main ul li {
+		clear: both;
+		float: none;
+		display: block;
+
+	}
+
+    header nav.nav-main ul.level-0 > li{
+        border-bottom: 1px solid #252525;
+    }
+
+
+	header nav ul.nav-main > li + li {
+		margin-left: 0;
+	}
+
+	header nav ul.nav-main li a,
+	header nav ul.nav-main ul.dropdown-menu li > a,
+	body header.single-menu nav ul.nav-main li.active > a {
+		padding: 9px 8px;
+		border: 0;
+		border-top: 0;
+		margin: 0;
+	}
+
+	header nav.nav-main ul li:last-child,
+	header nav ul.nav-main ul.dropdown-menu li > a {
+		border-bottom: none;
+	}
+
+	header nav ul.nav-main li.dropdown > a {
+	position: relative;
+	}
+
+    header nav ul.nav-main li.dropdown > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #cccccc;
+        margin-top: 5px;
+        margin-right: 50px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #FFF;
+    }
+
+	header nav ul.nav-main li a {
+		color: #FFF !important;
+		clear: both;
+		float: none;
+		display: block;
+		padding-left: 0;
+	}
+
+	header nav ul.nav-main li a i.icon-angle-down {
+		position: absolute;
+		right: 5px;
+		top: 10px;
+	}
+
+	header nav.nav-main ul ul {
+		margin-left: 20px !important;
+	}
+
+	header nav.nav-main ul.dropdown-menu {
+		position: static;
+		clear: both;
+		float: none;
+		display: none !important;
+        border: none;
+        border-left: 1px solid #fff;
+        border-radius: 0;
+	}
+
+	header nav ul.nav-main ul.dropdown-menu {
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	header nav.nav-main li.submenu-active > ul.dropdown-menu {
+		display: block !important;
+	}
+
+	header nav ul.nav-main .dropdown-submenu > a:after {
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #FFF;
+	}
+
+	header nav ul.nav-main .dropdown-submenu:hover > a:after {
+		border-left-color: transparent;
+	}
+
+	body header nav ul.nav-main ul.dropdown-menu,
+	body header nav ul.nav-main li.dropdown.open a.dropdown-toggle,
+	body header nav ul.nav-main li a,
+	body header nav ul.nav-main li > a:hover,
+	body header nav ul.nav-main li.active a,
+	body header nav ul.nav-main li.dropdown:hover a,
+	body header nav ul.nav-main ul.dropdown-menu li:hover > a,
+	body header nav ul.nav-main li.dropdown:hover ul.dropdown-menu li > a:hover{
+		background: none !important;
+		background-color: transparent !important;
+	}
+
+	header.center nav ul.nav-main > li {
+		display: block;
+	}
+
+	header nav ul.nav-main ul.sub-menu {
+		padding: 0;
+		margin: 0 0 10px 0;
+	}
+
+	/* Responsive Button Nav */
+	button.btn-responsive-nav {
+        background: #000000;
+        top: 26px;
+        display: block;
+        position: absolute;
+        right: 20px;
+        color: #FFF;
+        border-radius: 0;
+        box-shadow: 0 0 1px #FFF;
+	}
+
+	button.btn-responsive-nav:hover,
+	button.btn-responsive-nav:active,
+	button.btn-responsive-nav:focus {
+		color: #CCC;
+	}
+
+	/* Logo */
+	header h1.logo img {
+		max-width: 180px;
+	}
+	
+	/* Search  */
+	header div.search {
+		display: none;
+	}
+
+    header div.effect2 > div.container{
+        margin-bottom: 0;
+    }
+
+    .fullwidthbanner-container .tp-rightarrow.default,.tp-leftarrow.default{display: none !important;}
+
+}
+
+@media (max-width: 767px) {
+
+	/* Header */
+	header {
+		display: block;
+	}
+
+	header > div.container {
+		width: 100%;
+	}
+
+	/* Navigation */
+	header.center nav {
+		width: auto;
+	}
+
+	header nav ul.nav-top {
+		float: right;
+		margin-right: 0;
+	}
+
+	/* Responsive Button Nav */
+	button.btn-responsive-nav {
+		top: 26px;
+	}
+
+}
+
+@media (max-width: 479px) {
+
+	/* Base */
+	body {
+		font-size: 13px;
+	}
+
+	/* Arrow */
+	span.arrow {
+		display: none;
+	}
+
+	/* Navigation */
+	header nav ul.nav-top,
+	header div.header-top {
+		display: none;
+	}
+
+
+}
+
+/* Nav Responsive Breakpoints */
+@media (max-width: 600px) {
+
+	header nav ul.nav-top li {
+		display: none;
+	}
+
+	header nav ul.nav-top li.phone {
+		display: block;
+	}
+
+
+}
+
+/*Mobile Menu Media Quires*/
+@media (max-width: 640px){
+    button.btn-responsive-nav,header div.nav-main-collapse.in{display: none !important;}
+    .mobile-menu{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width:641px){
+    /*Mobile menu*/
+    .mobile-menu{
+        display: none;
+    }
+}
+

@@ -1,0 +1,12 @@
+#registration{
+	padding: 40px 0;
+}
+.reg-btn,.reg-btn:hover{
+	color: #fff!important;
+}
+.before-registration-terms{
+	line-height: 20px;
+}
+.register-label{
+	font-weight: normal;
+}

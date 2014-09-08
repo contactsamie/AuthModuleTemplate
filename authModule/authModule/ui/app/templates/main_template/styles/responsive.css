@@ -1,0 +1,102 @@
+
+  /*	THE MEDIA CHOOSER TO SET DIFFERENT SIZES OF THE CONTAINER DEPENDING ON THE SCREEN SIZE    */
+  @media only screen and (min-width: 980px) and (max-width: 1280px) {
+
+ .portfolio-inner ul#filters li {padding-left: 0px;}
+
+
+
+}
+  
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+
+
+
+
+   }
+
+  @media only screen and (min-width: 640px) and (max-width: 991px) {
+      .header-top{display: none}
+      #clients ul li {
+          width: 19.50% !important;
+      }
+  }
+
+   @media only screen and (min-width: 360px) and (max-width: 640px) {
+div#portfolio {top: 4%;}
+
+       #clients ul li {
+           width: 19.30% !important;
+       }
+
+
+
+   }
+
+   @media only screen and (min-width: 0px) and (max-width: 479px) {
+		
+
+
+
+
+   }
+   
+   @media (max-width:480px){
+	.item{
+		height: auto!important;
+	}
+	
+	.iconimg {
+		transition: all 500ms;
+		padding: 7px;
+		display: inline;
+	}
+	.two-colum-portfolio .recent-work-project-title{
+		top: 35px!important;
+	}
+}
+@media (max-width:991px) {
+    .slider-btn,.single-title{display:none}
+}
+
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+        ul.timeline > li > .timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        ul.timeline > li > .timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+}
+
+
+
+

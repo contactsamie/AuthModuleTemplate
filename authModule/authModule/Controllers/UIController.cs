@@ -24,8 +24,12 @@ namespace authModule.Controllers
             var parts = route.Split('.');
             var type = parts[parts.Length - 1];
 
-            if (type == "cshtml") return PartialView("~/ui/app/" + route);
-            var result = new FilePathResult("~/ui/app/" + route, "text/" + type);
+            var foreType = (type == "png" || type == "jpg" || type == "jpeg" || type == "gif") ? "image" : "text";
+
+
+            if (type == "cshtml") return PartialView("~/Views/"+route);
+          //  if (type == "cshtml") return PartialView("~/ui/app/" + route);
+            var result = new FilePathResult("~/ui/app/" + route, foreType+"/" + type);
             return result;
         }
     }

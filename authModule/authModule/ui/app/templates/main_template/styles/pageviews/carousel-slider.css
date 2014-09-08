@@ -1,0 +1,21 @@
+#theme-slider{position:relative;}#theme-slider .prev:hover,#theme-slider .next:hover{background-color:rgba(0, 0, 0, 0.5);}
+#theme-slider .carousel h2{font-size:36px;}
+#theme-slider .carousel .btn{border:3px solid rgba(255, 255, 255, 0.5);color:#ffffff;border-radius:0;margin-top:5px;}
+#theme-slider .carousel .btn:hover{background-color:rgba(255, 255, 255, 0.3);}
+#theme-slider .carousel .boxed{padding:10px 15px;background-color:rgba(0, 0, 0, 0.8);display:inline-block;}
+#theme-slider .carousel .item{background-position:50%;background-repeat:no-repeat;background-size:cover;left:0 !important;opacity:0;top:0;position:absolute;width:100%;display:block !important;height:600px;-webkit-transition:opacity ease-in-out 500ms;-moz-transition:opacity ease-in-out 500ms;-o-transition:opacity ease-in-out 500ms;transition:opacity ease-in-out 500ms;}
+#theme-slider .carousel .item:first-child{top:auto;position:relative;}
+#theme-slider .carousel .item.active{opacity:1;-webkit-transition:opacity ease-in-out 500ms;-moz-transition:opacity ease-in-out 500ms;-o-transition:opacity ease-in-out 500ms;transition:opacity ease-in-out 500ms;z-index:1;}
+#theme-slider .prev{position:absolute;top:50%;background-color:rgba(0, 0, 0, 0.3);color:#ffffff !important;display:inline-block;margin-top:-25px;font-size:24px;height:50px;width:50px;line-height:44px;text-align:center;z-index:5;left:10px;}
+#theme-slider .next{position:absolute;top:50%;background-color:rgba(0, 0, 0, 0.3);color:#ffffff !important;display:inline-block;margin-top:-25px;font-size:24px;height:50px;width:50px;line-height:44px;text-align:center;z-index:5;right:10px;}
+#theme-slider .active .animation.animated-item-1{-webkit-animation:fadeInUp 300ms linear 300ms both;-moz-animation:fadeInUp 300ms linear 300ms both;-o-animation:fadeInUp 300ms linear 300ms both;-ms-animation:fadeInUp 300ms linear 300ms both;animation:fadeInUp 300ms linear 300ms both;}
+#theme-slider .active .animation.animated-item-2{-webkit-animation:fadeInUp 300ms linear 600ms both;-moz-animation:fadeInUp 300ms linear 600ms both;-o-animation:fadeInUp 300ms linear 600ms both;-ms-animation:fadeInUp 300ms linear 600ms both;animation:fadeInUp 300ms linear 600ms both;}
+#theme-slider .active .animation.animated-item-3{-webkit-animation:fadeInUp 300ms linear 900ms both;-moz-animation:fadeInUp 300ms linear 900ms both;-o-animation:fadeInUp 300ms linear 900ms both;-ms-animation:fadeInUp 300ms linear 900ms both;animation:fadeInUp 300ms linear 900ms both;}
+#theme-slider .active .animation.animated-item-4{-webkit-animation:fadeInUp 300ms linear 1200ms both;-moz-animation:fadeInUp 300ms linear 1200ms both;-o-animation:fadeInUp 300ms linear 1200ms both;-ms-animation:fadeInUp 300ms linear 1200ms both;animation:fadeInUp 300ms linear 1200ms both;}
+
+.carousel-content {padding: 200px 0}
+.carousel-content .slider-title-2{display: inline-block;text-transform: uppercase}
+.carousel-content .caro-slider{display: inline-block;background: #000;padding: 15px 25px;color: #fff}
+.video-wrapper{padding: 200px 0}
+.rox-video{margin-top: 100px}
+.carousel-content h2.animated-item-1{color: #fff}

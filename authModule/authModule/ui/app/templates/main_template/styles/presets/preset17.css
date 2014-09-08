@@ -1,0 +1,190 @@
+/*	normal green, #05a380 = #EE82EE
+	dark green= #0b9c7d
+*/
+
+a{
+	color: #a2a2a2 !important;
+}
+
+
+/*light text color*/
+a:hover,
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default, 
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, 
+.navbar-nav>li:first-child a, 
+.navbar-nav>li:active a,
+.we-work-section span,
+.recent-work-head span,
+.service-head-title span,
+.heading h2 span.preset-color,.preset-color,
+ul.price-table li:last-child a:hover,
+.thumbnail .caption p a:hover,
+portfolio-page-head span,
+.icon-social-media,
+.fa.fa-maxcdn.icon-social-media:hover,
+.link-color,
+#rox-process h2.process-title span,
+.amazing-title h2 span,h3 span.amazing-title,.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,blockquote i,.list-skills i,.skill-title span,header.rox-header2 .nav > li:hover > a
+
+{
+	color: #EE82EE!important;
+}
+
+
+/*light color bakground*/
+
+
+.price,
+#loadMore,
+#footer-one,
+.iconimg:hover,
+.blog-image .date,
+.portfolio-item-hover,
+.team-details-social a,
+.tag-widgets-btn button,
+#first-skill .progress-bar,
+.item-body .btn.btn-default,
+.portfolio-item-bottm-space,
+ul.price-table li:first-child,
+.contact-btn .img-responsive,
+.blog-page-bottom-layout li a,
+ul.price-table li:last-child a,
+.tag-widgets-btn button:hover,
+.contact-btn .btn.btn-default,
+.blog-detail-btn .btn.btn-default,
+.blog-detail-from .btn.btn-default,
+.tag-widgets-btn-blog .btn.btn-default,
+.portfolio-bottom-button .btn.btn-default,
+.icon-process-section:hover .process-sec-one, 
+.icon-process-section:hover .process-sec-two, 
+.icon-process-section:hover .process-sec-four, 
+.icon-process-section:hover .process-sec-three,
+ul#filters li a:hover, ul#filters li a.selected,
+.portfolio-item:hover .portfolio-item-bottm-space,
+.recent-work-item:hover .recent-work-item-bottm-space,
+.icon-hover-we-work-section:hover .icon-bg-we-work-sec, 
+.icon-hover-we-work-section:hover .icon-bg-we-work-sec-two, 
+.icon-hover-we-work-section:hover .icon-bg-we-work-sec-three, 
+.icon-hover-we-work-section:hover .icon-bg-we-work-sec-four,.btn-agree,.btn-default:hover,.btn-default:focus,.btn-info.active,.reg-btn,.reg-btn:hover,.register-label,.portfolio-carosel-indicators li,.btn-live,.timeline-drop-btn:hover,.open .dropdown-toggle.btn-primary,
+li.active > a,#breadcumb
+{
+	background-color: #EE82EE;
+}
+
+.portfolio-carosel-indicators li.active{border: 2px solid #EE82EE }
+
+
+
+/*dark color backgorund*/
+.we-work-btn-icon,
+.down-btn-img-layout,.timeline-drop-btn
+{
+	background: #ee83ee;
+}
+
+
+
+
+/*transparent background*/
+.recent-work-item-hover,
+.portfolio-item:hover .portfolio-item-hover,.btn-live:hover
+{
+	background: rgba(238, 131, 238, 0.69);
+}
+
+
+
+
+/*border color*/
+.item-body .btn.btn-default,
+ul#filters li a,
+.tag-widgets-btn button,
+.tag-widgets-btn button:hover,
+#amazing-team .team-details img,
+.blog-image img,
+.portfolio-carosel-inner,.blog-page-main-img .img-responsive
+{
+	border-color: #EE82EE;
+}
+
+
+/*border bottom color*/
+.blog-image img,
+#footer-two,
+.blog-page-main-img .img-responsive,
+.icon-hover-we-work-section:hover .pointer
+{
+	border-bottom-color: #ee83ee;
+}
+
+
+/*border top color*/
+.down-arrow,
+.navbar-default .navbar-nav>li:hover,
+.navbar-default .navbar-nav>li:focus,
+.navbar-default .navbar-nav>li:active,
+header nav ul.nav-main li.dropdown:hover>ul .rox-menu-wrapper,
+#first-skill .panel-heading,
+ul#filters li:hover > div,
+header.rox-header2 nav ul.nav-main li.dropdown:hover
+{
+	border-top-color: #ee83ee;
+}
+
+/*border left color*/
+.blog-detail-middle-text{
+	border-left-color:#EE82EE;
+}
+
+
+/*border right color*/
+{
+	border-right-color:#EE82EE;
+}
+
+
+/*Portfolio Active */
+ul#filters li a.selected + div{
+border-top-color: #EE82EE;
+}
+
+/*responsive Color Adjust*/
+@media (max-width: 991px) {
+header div.nav-main-collapse {
+    border-top: 2px solid #EE82EE;
+}
+}
+
+/*Rox Submenu Li hover Bg color */
+.rox-submenu-item .rox-menu-wrapper>li:hover>a,
+.rox-megamenu-content ul>li:hover>a,header nav.mega-menu ul.nav-main li.rox-mega-menu-item:hover ul.sub-menu li:hover a:hover{background:#EE82EE!important;}
+
+.icon-hover-we-work-section:hover .pointer{
+border-color: transparent transparent #EE82EE transparent;
+}
+.icon-hover-we-work-section:hover .bottom-border-we-work {
+    border-bottom: 4px solid #EE82EE;
+}
+.sec-service{
+background:#EE82EE url(../../images/presets/preset17/are-you-ready.png)repeat;
+}
+#first-skill .panel-group .panel h4 a div.pull-left{
+background: #EE82EE url(../../images/minus.png) no-repeat 50% 50%;
+}
+#first-skill .panel-group .panel h4 a.collapsed div {
+background-image: url(../../images/plus.png);
+}
+
+#design-feature{
+background: #EE82EE url(../../images/bg.png)repeat;
+}
+.blog-detail-text-pointer{
+	border-color: transparent transparent transparent #EE82EE;
+}
+
+/*Preset Images*/
+a.logo{background:url("../../images/presets/preset17/logo.png") no-repeat 50%; width: 167px;height: 67px}
+.fotter-logo{background:url("../../images/presets/preset17/logo_footer.png") no-repeat 50%; width: 167px;height: 67px}
+.icon-top-icon1{background: url("../../images/presets/preset17/whatwecanicon1.png")no-repeat 50%}
+.icon-top-icon2{background: url("../../images/presets/preset17/whatwecanicon2.png")no-repeat 50%}
+.icon-top-icon3{background: url("../../images/presets/preset17/whatwecanicon3.png")no-repeat 50%}

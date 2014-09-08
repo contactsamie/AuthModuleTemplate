@@ -1,0 +1,82 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+@media (min-width:992px){
+
+	/*Submenu min-width */
+	header nav ul.nav-main ul.dropdown-menu,
+	header nav ul.nav-main ul.dropdown-menu .rox-menu-wrapper ul.dropdown-menu,
+	header nav.mega-menu ul.nav-main li.rox-mega-menu-item ul.sub-menu{min-width: 200px;}
+	
+	/*Drop Down Menu Spacing*/
+	nav.mega-menu .dropdown-menu{padding-top:23px;padding-left:0}
+	
+	/*Rox Wrapper Main Submenu Spacing*/
+	header nav ul.nav-main ul.dropdown-menu .rox-menu-wrapper ul.dropdown-menu{padding-left:16px;margin-top:-16px}
+	
+	/*Rox menu Wraper Bg Color*/
+	header nav ul.nav-main li.dropdown:hover>ul .rox-menu-wrapper{background:#000;border-top-width:2px; border-style: solid;}
+
+	/*Rox Mega Menu Subtitle Color*/
+	header nav.mega-menu ul.nav-main li.rox-mega-menu-item .mega-menu-sub-title{color:#fff}
+
+	/*Rox Submenu Li a color*/
+	header nav ul.nav-main ul.dropdown-menu .rox-menu-wrapper>li>a,
+	header nav.mega-menu ul.nav-main li.rox-mega-menu-item ul.sub-menu a{color:#fff !important}
+
+
+
+	/*Menu Transition Effect*/
+    header nav.mega-menu ul.nav-main li.rox-mega-menu-item ul.sub-menu li a,
+    header nav ul.nav-main ul.dropdown-menu .rox-menu-wrapper>li >a{
+        transition:all .5s;
+        -o-transition:all .5s;
+        -moz-transition:all .5s;
+        -webkit-transition:all .5s;
+    }
+
+
+    /*Rox Submenu li hover color*/
+	header nav.mega-menu ul.nav-main li.rox-mega-menu-item ul.sub-menu li:hover a,
+	header nav ul.nav-main ul.dropdown-menu .rox-menu-wrapper>li:hover>a{color:#fff !important;padding-left: 18px;}
+}
+
+
+/*roxheader2 Header Style 2*/
+@media (min-width: 992px) {
+    header.rox-header2 {
+        background: rgba(0,0,0,0.6) !important;
+        border-top: 1px solid rgba(0,0,0,0.8) !important;
+        border-bottom: 1px solid rgba(0,0,0,0.8) !important;
+        margin-top: 15px;
+    }
+    header.rox-header2 #rox-search{
+        border-left: 1px solid rgba(0,0,0,0.8) !important;
+        border-right: 1px solid rgba(0,0,0,0.8) !important;
+    }
+
+    /*Rox menu Wraper Bg Color*/
+    header.rox-header2 nav ul.nav-main li.dropdown:hover>ul .rox-menu-wrapper{background:rgba(0,0,0,0.9) !important;border-top-width:2px; border-style:solid;}
+    header.rox-header2 .nav > li > a{color: #fff !important;text-shadow: none;}
+
+    /*Hover li*/
+    header.rox-header2 .nav > li:hover > a{text-shadow: none;}
+
+    header.rox-header2 div.search input#search{opacity: 1}
+}
+
+
+/*Responsive Menu Bg on Header2*/
+header.rox-header2 {
+    background: rgba(0,0,0,0.6) !important;
+    border-top: 1px solid rgba(0,0,0,0.8) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.8) !important;
+}
+@media (max-width: 991px) {
+    header.rox-header2 div.nav-main-collapse {
+        background: rgba(0,0,0,0.6) !important;
+        border-bottom: 1px solid rgba(0,0,0,0.8) !important;
+    }
+    header.rox-header2 nav.nav-main ul.level-0 > li {
+        border-bottom: 1px solid #818181 !important;
+    }
+}
+

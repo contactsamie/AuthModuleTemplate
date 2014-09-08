@@ -1,0 +1,356 @@
+/*== Reset ==*/
+html, body, div, span, applet, object, iframe,p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	vertical-align: baseline;
+    line-height: 20px;
+}
+
+p.privacy{padding: 25px 15px}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*== Global Style ==*/
+
+body { 
+	background:transparent;
+}
+	
+section {
+	position:relative;
+	width:100%;
+	min-width:100%;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+/*===============================transition=================================
+=================================transition=================================
+=================================transition===============================*/
+a:hover{
+	-webkit-transition: color 300ms ;
+	-moz-transition: color 300ms ;
+	-ms-transition: color 300ms ;
+	-o-transition: color 300ms ;
+	transition: color 300ms ;
+}
+
+
+/*===============================font size=============================
+=================================font size=============================
+=================================font size===========================*/
+
+.navbar-nav>li span.nav-slogan{
+	font-size: 11px;
+}
+
+.header-top,
+.thumbnail .caption p a,
+.detail-address,
+.detail-address-other,
+.blog-page-main-img-bottom-layout a,
+.blog-page-main-img-bottom-layout span,
+.blog-page-main-other .blog-text,
+.blog-page-main-img-bottom-layout a,
+.blog-page-main-img-bottom-layout span,
+.blog-page-main-other .blog-text,
+.blog-detail-bottom-comment,
+.blog-detail-bottom-comment-other,
+.blog-detail-from .btn.btn-default,
+.blog-detail-btn .btn.btn-default,
+.contact-btn .btn.btn-default,
+p.fotter-paragraph-under-logo,span.curancy
+{
+	font-size: 13px;
+}
+
+.we-work-section p,
+#first-skill .panel-body,
+.recent-work-project-title .btn.btn-default,
+.portfolio-project-title .btn.btn-default
+{
+	font-size: 15px;
+}
+.call-to-action-btn-sec .btn.btn-default,
+.carousel-caption ul li ul.client-name li
+.carousel-caption ul li ul.client-name li a i,
+#amazing-team .team-detail-title h2
+{
+	font-size: 18px;
+}
+
+.footer-header-layout,
+.close
+{
+	font-size: 20px;
+}
+.contact-info h2,
+.we-work-section-item h2,
+.rox-process h2,
+#first-skill .panel-heading a,
+#first-skill .progress-bar span,
+.item-body h2,
+#design-feature h2.design-title,
+ul.price-table li:first-child,
+ul.price-table li:last-child,
+.thumbnail .caption h3,
+.bolg-news-layout h3,
+.bolg-news-layout h3
+{
+	font-size: 22px;
+}
+
+.recent-work-project-title h1,
+.price p,
+.blog-image .date,
+.portfolio-project-title h1,
+#loadMore
+{
+	font-size: 25px;
+}
+
+.sec-service h1{
+	font-size: 32px;
+}
+
+.we-work-section h1,
+#breadcumb,h1 span,span.preset-color,h2 span,
+#first-skill h2,
+.recent-work-head h1,
+.service-head-title h1,
+.design-feature-content h2,
+.heading h2,
+.portfolio-page-head h1,
+#rox-process h2.process-title,
+.amazing-title h2
+{
+	font-size: 36px;
+}
+
+
+/*===============================font family=================================
+=================================font family=================================
+=================================font family===============================*/
+ul.top-info,
+.navbar-nav>li span.nav-slogan,
+.contact-info,
+.we-work-section,
+.we-work-section-item,
+.recent-work-head p,
+.recent-work-project-title h1,
+.service-head-title p,
+.item-body,
+.carousel-caption,
+.carousel-caption p,
+ul.price-table,
+.price,
+.blog-image .date,
+.thumbnail .caption p,
+.thumbnail .caption p a,
+.portfolio-page-head p,
+.portfolio-project-title h1,
+.portfolio-bottom-button .btn.btn-default,
+#amazing-team .team-detail-title p,
+.amazing-title p,
+.blog-page-main-img-bottom-layout a,
+.blog-page-main-img-bottom-layout span,
+.bolg-news-layout p,
+.blog-page-main-other .form-control,
+.blog-categories p,
+.blog-page-main-img-bottom-layout a,
+.blog-page-main-img-bottom-layout span,
+.blog-page-main-img-bottom-layout span,
+.blog-categories p,
+.blog-detail-middle-text
+{
+	font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+}
+
+.navbar-default,
+.search2,
+#breadcumb,
+.contact-info h2,
+.contact-info address span,
+.we-work-section-item h2,
+.rox-process h2,
+.rox-process p,
+#first-skill .panel-heading a,
+#first-skill .panel-body,
+#first-skill .progress-bar span,
+.recent-work-project-title .btn.btn-default,
+.call-to-action-btn-sec .btn.btn-default,
+.item-body h2,
+#design-feature h2.design-title,
+#design-feature p.design-text,
+.design-feature-content p,
+#pricetable,
+.thumbnail .caption h3,
+.top-bar-heading,
+ul#filters li a,
+.portfolio-project-title .btn.btn-default,
+#footer-one,
+#footer-two,
+#footer-three,
+#rox-process p,
+#amazing-team .team-detail-title h2,
+.blog-page-main-img,
+.blog-page-main-other,
+.blog-page-bottom-layout,
+.blog-page-main-other,
+.blog-page-bottom-layout,
+.blog-detail-from,
+.blog-detail-from-contact-page,
+.contact-from-contact-page,
+.slider-btn,
+.single-title,
+header nav ul.nav-main li a,header nav.mega-menu ul.nav-main li.rox-mega-menu-item ul.sub-menu a,.title,.sub-title,.extra-title,.sub-content h3,.sub-content span
+,header div.search input#search,header nav.mega-menu ul.nav-main li.rox-mega-menu-item .mega-menu-sub-title
+ {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+}
+
+.we-work-section h1,
+#first-skill h2,
+.recent-work-head h1,
+.sec-service h1,
+.service-head-title h1,
+.design-feature-content h2,
+.heading h2,
+.portfolio-page-head h1,
+.form-inline .btn.btn-default,
+#rox-process h2.process-title,
+.amazing-title h2,
+.slider-title,
+.slider-title-2,
+.slide-title,
+.slide-title-2
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*=======font color=========
+=========font color=========
+=========font color=======*/
+.navbar-default .navbar-nav>li>a,
+.contact-info h2
+ {
+	color: #242424;
+}
+
+.navbar-nav>li span.nav-slogan,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus,
+.search,
+.search2
+{
+	color: #a2a2a2;
+}
+
+.we-work-section-item{
+	color: #6a6a6a;
+}
+
+.dropdown-menu>li>a,
+#breadcumb
+ {
+	color:#fff;
+}
+
+.contact-info address {
+	color: #545454;
+}
+
+/*Slider Bullets Adjustment*/
+.tp-bullets.simplebullets.round{margin-left: -48px !important;}
+
+
+/*Graphy icons*/
+
+.bs-example-tooltips > .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bs-glyphicons {
+    list-style: none;
+}
+.bs-glyphicons li {
+    float: left;
+    width: 12.5%;
+    height: 115px;
+    padding: 10px;
+    margin: 0 -1px -1px 0;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.bs-glyphicons {
+    padding-left: 0;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    list-style: none;
+    overflow: hidden;
+}
+.bs-glyphicons .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bs-glyphicons .glyphicon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.highlight pre{padding: 15px;}

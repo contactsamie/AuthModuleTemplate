@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -8,6 +10,7 @@ using IdentitySample.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using Microsoft.Owin.Security.Provider;
 
 namespace authModule.Controllers.AccountRegistrations
 {
@@ -81,11 +84,15 @@ namespace authModule.Controllers.AccountRegistrations
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [ValidateAjax]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
+            // here the ValidateAjax will kick in
             if (!ModelState.IsValid)
             {
-                return PartialView(model);
+                Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                var errors = new List<string> { "BadRequest" };
+                return Json(errors);
             }
 
             // This doen't count login failures towards lockout only two factor authentication
@@ -94,18 +101,26 @@ namespace authModule.Controllers.AccountRegistrations
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    return Json(true);
 
                 case SignInStatus.LockedOut:
-                    return PartialView("Lockout");
+                    Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    var errors = new List<string> { "Lockout" };
+                    return Json(errors);
+
 
                 case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl });
+                    Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    errors = new List<string> { "RequiresVerification" };
+                    return Json(errors);
+                //return RedirectToAction("SendCode", new { ReturnUrl = returnUrl });
 
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt");
-                    return PartialView(model);
+                    Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    
+                    errors = new List<string> { "Invalid login attempt" };
+                    return Json(errors);
             }
         }
 
@@ -122,6 +137,7 @@ namespace authModule.Controllers.AccountRegistrations
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [ValidateAjax]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
@@ -135,23 +151,31 @@ namespace authModule.Controllers.AccountRegistrations
                     var emailBody = EmailTemplateFactory.GetCommonTemplate("Confirm your account", "Please confirm your account by clicking  <a href=\"" + callbackUrl + "\">Here</a><br /><br />");
                     await UserManager.SendEmailAsync(user.Id, "Confirm your account", emailBody);
                     ViewBag.Link = callbackUrl;
-                    return PartialView("DisplayEmail");
+                    return Json(true);
                 }
                 AddErrors(result);
             }
 
             // If we got this far, something failed, redisplay form
-            return PartialView(model);
+            Response.StatusCode = (int)HttpStatusCode.BadRequest;
+
+           var  errors = new List<string> { "Invalid registration attempt" };
+            return Json(errors);
         }
 
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
+        [ValidateAjax]
         public async Task<ActionResult> ConfirmEmail(string userId, string code)
         {
             if (userId == null || code == null)
             {
-                return PartialView("Error");
+                Response.StatusCode = (int)HttpStatusCode.BadRequest;
+
+                var errors = new List<string> { "ConfirmEmail error" };
+                return Json(errors);
+               
             }
             var result = await UserManager.ConfirmEmailAsync(userId, code);
 
@@ -159,7 +183,15 @@ namespace authModule.Controllers.AccountRegistrations
                   
             await UserManager.SendEmailAsync(userId, "Thank You", emailBody);
 
-            return PartialView(result.Succeeded ? "ConfirmEmail" : "Error");
+            if (result.Succeeded)
+            {
+                return Json(true);
+            }
+            // If we got this far, something failed
+            Response.StatusCode = (int)HttpStatusCode.BadRequest;
+
+            var error = new List<string> { "ConfirmEmail error" };
+            return Json(error);
         }
 
         //
@@ -175,6 +207,7 @@ namespace authModule.Controllers.AccountRegistrations
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [ValidateAjax]
         public async Task<ActionResult> ForgotPassword(ForgotPasswordViewModel model)
         {
             if (ModelState.IsValid)
@@ -183,7 +216,11 @@ namespace authModule.Controllers.AccountRegistrations
                 if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
                 {
                     // Don't reveal that the user does not exist or is not confirmed
-                    return PartialView("ForgotPasswordConfirmation");
+                   // return PartialView("ForgotPasswordConfirmation");
+                    Response.StatusCode = (int)HttpStatusCode.BadRequest;
+
+                    var error = new List<string> { "ForgotPassword error" };
+                    return Json(error);
                 }
 
                 var code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
@@ -194,11 +231,14 @@ namespace authModule.Controllers.AccountRegistrations
                 
                 await UserManager.SendEmailAsync(user.Id, "Reset Password", emailBody);
                 ViewBag.Link = callbackUrl;
-                return PartialView("ForgotPasswordConfirmation");
+                return Json(true);
             }
 
             // If we got this far, something failed, redisplay form
-            return PartialView(model);
+            Response.StatusCode = (int)HttpStatusCode.BadRequest;
+
+            var errors = new List<string> { "ForgotPassword error" };
+            return Json(errors);
         }
 
         //
