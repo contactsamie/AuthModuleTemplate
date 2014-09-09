@@ -36,14 +36,20 @@ angular
   }).run(function(editableOptions) {
       editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
 
-      (function ($) {
+     
+
+  });
+(function ($) {
           $.fn.autosubmit = function () {
               this.submit(function (event) {
                   var form = $(this);
                   $.ajax({
-                      type: form.attr('method'),
-                      url: form.attr('action'),
-                      data: form.serialize()
+                      type: "POST",
+                      url: "/api/Account/Login",
+                      data: (function () { var data = form.serialize();
+                          data+="&__RequestVerificationToken=" + $('#_CRSFform>input[name=__RequestVerificationToken]').val();
+                          return data;
+                      })()
                   }).done(function (r, e, s) {
                       console.log(r);
                       console.log("success");
@@ -55,5 +61,3 @@ angular
               });
           };
       })(jQuery);
-
-  });
